@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1TEQ PROVIDERS INC</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">1TEQ PROVIDERS INC.,</div>
+            <div class="nav-menu">
+                <a href="#home">HOME</a>
+                <a href="#features">Features</a>
+                <a href="#software-systems">Softwares</a>
+                <a href="#our-products">Products</a>
+                <a href="#marketing">Accredited</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="video-background">
+                <div class="video-foreground">
+                    <iframe 
+                        src="https://www.youtube.com/embed/DMHdKPsfrh8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=DMHdKPsfrh8&playsinline=1&modestbranding=1&iv_load_policy=3&enablejsapi=1&widgetid=1"
+                        title="Background video"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1>1TEQ PROVIDERS INC.,</h1>
+                <p>Empowering businesses with top-tier POS solutions! As the leading provider, we deliver cutting-edge technology to streamline your operations and boost your success.</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" id="demoButton">Get a Demo</button>
+                    <button class="btn-secondary">Watch Video</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Form Modal -->
+        <div class="modal" id="demoModal">
+            <div class="modal-content">
+                <button class="close-button">&times;</button>
+                <h2>Get A Free Demo</h2>
+                <form id="demoForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" id="fullName" name="fullName" placeholder="Full Name*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="companyName" name="companyName" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email*" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="businessType" name="businessType" required>
+                                <option value="" disabled selected>Type of Business</option>
+                                <option value="retail">Retail</option>
+                                <option value="restaurant">Finedining</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="other">Foreign Exchange</option>
+                                <option value="other">Kiosk</option>
+                                <option value="other">Membership</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="storeCount" name="storeCount" required>
+                                <option value="" disabled selected>How many store/branches?</option>
+                                <option value="1">1</option>
+                                <option value="2-5">2-5</option>
+                                <option value="6-10">6-10</option>
+                                <option value="10+">10+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="location" name="location" required>
+                                <option value="" disabled selected>Location/Region</option>
+                                <option value="ncr">NCR</option>
+                                <option value="luzon">Luzon</option>
+                                <option value="visayas">Visayas</option>
+                                <option value="mindanao">Mindanao</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="city" name="city" required>
+                                <option value="" disabled selected>City/Province</option>
+                                <option value="manila">Manila</option>
+                                <option value="quezon">Quezon City</option>
+                                <option value="makati">Makati</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group radio-group">
+                        <label>Do you have an existing POS System?</label>
+                        <div class="radio-options">
+                            <label><input type="radio" name="existingPOS" value="yes"> Yes</label>
+                            <label><input type="radio" name="existingPOS" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="requirements" name="requirements" placeholder="Brief detail of your requirement" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">SUBMIT NOW</button>
+                </form>
+            </div>
+        </div>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Point of Sales Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>User Management</h3>
+                        <p>Control access levels, track employee performance, and manage roles with our comprehensive user management system.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Order Management</h3>
+                        <p>Streamline order processing, track order status, and manage returns with our intuitive order management system.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Faster Transactions</h3>
+                        <p>Speed up checkouts, reduce queues, and minimize errors with automated pricing and calculations.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure Payments</h3>
+                        <p>Process payments securely with multiple payment options, encryption, and fraud protection measures.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Customer Loyalty & Promotions</h3>
+                        <p>Boost customer retention with discounts, rewards, and personalized promotions based on purchase history.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3>Inventory Management</h3>
+                        <p>Real-time stock tracking, automated reordering, and optimized inventory control to prevent shortages or overstocking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="software-systems" class="software-systems">
+            <div class="container">
+                <h2>What Can 1TEQ Providers INC., Do For You?</h2>
+                <div class="systems-grid">
+                    <div class="system-card">
+                        <div class="system-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Fine Dining POS</h3>
+                        <p>Complete point of sale solution tailored for fine dining restaurants with table management.</p>
+                    </div>
+
+                    <div class="system-card">
+                        <div class="system-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Retail POS</h3>
+                        <p>Comprehensive retail management system with inventory tracking, sales analytics, and customer loyalty programs.</p>
+                    </div>
+
+                    <div class="system-card">
+                        <div class="system-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Hotel Management</h3>
+                        <p>All-in-one hotel management solution with room booking, guest services, and facility management features.</p>
+                    </div>
+
+                    <div class="system-card">
+                        <div class="system-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>Membership System</h3>
+                        <p>Advanced membership management with subscription handling, benefits tracking, and member analytics.</p>
+                    </div>
+
+                    <div class="system-card">
+                        <div class="system-icon">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <h3>Kiosk System</h3>
+                        <p>Self-service kiosk solutions for automated ordering.</p>
+                    </div>
+
+                    <div class="system-card">
+                        <div class="system-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>Kitchen Display</h3>
+                        <p>Real-time kitchen order management system with order tracking and preparation timing features.</p>
+                    </div>
+
+                    <div class="system-card">
+                        <div class="system-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>Foreign Exchange</h3>
+                        <p>Currency exchange management system with real-time rates, transaction tracking, and reporting.</p>
+                    </div>
+
+                    <div class="system-card">
+                        <div class="system-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Online Sales Reporting</h3>
+                        <p>Real-time sales analytics and reporting system with customizable dashboards and data visualization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-products" class="our-products">
+            <div class="container">
+                <h2>What Can 1TEQ Providers INC Offer To You?</h2>
+                <div class="products-slider-container">
+                    <button class="nav-btn prev-btn" aria-label="Previous products">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="products-grid">
+                        <div class="product-card" data-product="cash-drawer">
+                            <div class="product-icon">
+                                <i class="fas fa-cash-register"></i>
+                            </div>
+                            <h3>Cash Drawer</h3>
+                            <p class="product-description">Secure cash management solution for efficient business transactions</p>
+                        </div>
+                        <div class="product-card" data-product="kiosk">
+                            <div class="product-icon">
+                                <i class="fas fa-tablet-alt"></i>
+                            </div>
+                            <h3>Kiosk</h3>
+                            <p class="product-description">Interactive self-service touchscreen for enhanced customer experience</p>
+                        </div>
+                        <div class="product-card" data-product="pole-display">
+                            <div class="product-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h3>Pole Display</h3>
+                            <p class="product-description">Real-time transaction display for customer price verification</p>
+                        </div>
+                        <div class="product-card" data-product="all-in-one">
+                            <div class="product-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <h3>All in One POS</h3>
+                            <p class="product-description">Complete point of sale system with integrated features</p>
+                        </div>
+                        <div class="product-card" data-product="receipt-printer">
+                            <div class="product-icon">
+                                <i class="fas fa-print"></i>
+                            </div>
+                            <h3>Receipt Printer</h3>
+                            <p class="product-description">High-speed receipt printing for quick transaction processing</p>
+                        </div>
+                        <div class="product-card" data-product="scanner">
+                            <div class="product-icon">
+                                <i class="fas fa-barcode"></i>
+                            </div>
+                            <h3>Scanner</h3>
+                            <p class="product-description">Precise barcode scanning for inventory management</p>
+                        </div>
+                        <div class="product-card" data-product="thermal-printer">
+                            <div class="product-icon">
+                                <i class="fas fa-print"></i>
+                            </div>
+                            <h3>Thermal Printer</h3>
+                            <p class="product-description">Professional thermal printing for labels and receipts</p>
+                        </div>
+                    </div>
+                    <button class="nav-btn next-btn" aria-label="Next products">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="marketing" class="marketing">
+            <h2>1TEQ PROVIDERS Is Accredited By</h2>
+            <div class="accredited-container">
+                <div class="bir-section">
+                    <img class="bir-logo" src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/bir-official-logo-2014_430x.png?v=1698303816" alt="BIR">
+                </div>
+                <div class="malls-grid">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/SM_Supermalls_logo_2022_svg_430x.png?v=1698303816" alt="SM">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/Ayala_Malls_logo_svg_430x.png?v=1698303816" alt="Ayala Malls">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/robinsons_mall_logo_430x.png?v=1698303816" alt="Robinsons Mall">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/megaworld-mall-logo_430x.png?v=1698303816" alt="Megaworld Lifestyle Malls">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/ortigas-mall-logo_430x.png?v=1698303816" alt="Ortigas Malls">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/starmall1.png?v=1731532423" alt="Starmall">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/lifemalls1.png?v=1731532422" alt="Lifemalls">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/greenfield1.png?v=1731532422" alt="Greenfield">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/VistaMall1.png?v=1731532422" alt="Vista Mall">
+                    <img src="https://cdn.shopify.com/s/files/1/0643/3364/4010/files/evermalls1.png?v=1731532422" alt="Evermall">
+                    <img src="docs/Images/Araneta.png" alt="Arenata Mall">
+                    <img src="docs/Images/Shangrila.png" alt="Shangrila Mall">
+                    <img src="docs/Images/Alliance.png" alt="Alliance Mall">
+                    <img src="docs/Images/Megaworld.png" alt="Megaworld">
+                    <img src="docs/Images/Rockwell.png" alt="Rockwell">
+                    <img src="docs/Images/Outlet.png" alt="Outlet Mall">
+                    <img src="docs/Images/Parqal.png" alt="Parqal">
+                    <img src="docs/Images/Gaisano.png" alt="Gaisano">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: ULYSSES.1TEQPROVIDERS@GMAIL.COM</p>
+                <p>Phone: (+639) 991-412-7379</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 1TEQ PROVIDERS INC., All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/products.js"></script>
+</body>
+</html>
